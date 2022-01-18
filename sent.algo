@@ -1,0 +1,29 @@
+ALGORITHM sentence
+VAR
+    caractere : CHAR
+    Chara : INTEGER := 0
+    Words : INTEGER := 1
+    Voyel : INTEGER := 0
+BEGIN
+
+REPEAT
+    Write("Entrez une valeur")
+    Read(caractere)
+    Chara = Chara+1
+    IF (carctere = " ") THEN
+        Words = Words + 1
+    END_IF
+
+    IF (caractere = "A" OR caractere="a" OR caractere="E" OR caractere="e" OR caractere="O" OR caractere="o" OR caractere="U" OR caractere="u" OR caractere="I" OR caractere="i" OR caractere="Y" OR caractere="y") THEN
+        Voyel = Voyel + 1 
+    END_IF
+
+UNTIL (caractere = ".")
+
+    Write("le nbr de Char est : ",Char)
+    Write("le Nbr de  Words est : ",Words)
+    Write("le Nbr de voyel est : ",Voyel)
+    
+END
+
+
